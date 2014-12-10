@@ -23,6 +23,13 @@ gem 'friendly_id', '5.0.4'
 # Font-awesome: https://github.com/FortAwesome/font-awesome-sass
 gem 'font-awesome-sass', '4.2.2'
 
+gem "paperclip", :git => "http://github.com/thoughtbot/paperclip.git"
+
+gem 'instagram'
+
+gem 'aws-sdk-core'
+
+
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.1.0'
 

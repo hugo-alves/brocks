@@ -92,4 +92,14 @@ Brocks::Application.configure do
     user_name: ENV["SMTP_USER"],
     password: ENV["SMTP_PWD"]
   }
+
+#amazon sdk com o paperclip
+  config.paperclip_defaults = {
+    :storage => :s3,
+    :s3_credentials => {
+      :bucket => ENV['rbrickteste'],
+      :access_key_id => ENV['AKIAIC7C3HPGH5CD3GXA'],
+      :secret_access_key => ENV['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']
+    }
+  }
 end
