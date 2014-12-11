@@ -29,6 +29,8 @@ gem 'instagram'
 
 gem 'aws-sdk-core'
 
+gem 'rmagick', '2.13.2', :git=>'http://github.com/rmagick/rmagick.git'
+
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.1.0'
 
