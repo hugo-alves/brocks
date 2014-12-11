@@ -1,6 +1,17 @@
-<%= form_tag({controller: "pins", action: "perfil", method: "post"}) do %>
-  <%= label_tag(:q, "Search for:") %>
-  <%= text_field_tag(:q) %>
-  <%= submit_tag("Search") %>
-  <%= debug params %>
-<% end %>
+<div>
+<p class="h1">busca de fotos do user, tem de usar aindo o userid</p>
+	<%= form_tag({controller: "pins", action: "perfil", method: "post"}) do %>
+	  <%= label_tag(:q, "Search for:") %>
+	  <%= text_field_tag(:q) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
+</div>
+<br> 
+<div>
+<p>busca de fotos do user, tem de usar aindo o userid</p>
+	<%= form_tag({controller: "pins", action: "index", method: "post"}) do %>
+	  <%= label_tag(:q, "Search for:") %>
+	  <%= text_field_tag(:q) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
+</div>

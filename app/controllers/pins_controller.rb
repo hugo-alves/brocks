@@ -1,7 +1,7 @@
 class PinsController < ApplicationController
 
 	def index
-	    @instagram = Instagram.user_recent_media("11056439", {:count => 10})
+	    @instagram = Instagram.user_recent_media(params[:q], {:count => 10})
 	end
 
 	def perfil
