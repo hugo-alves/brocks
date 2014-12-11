@@ -29,7 +29,6 @@ gem 'instagram'
 
 gem 'aws-sdk-core'
 
-
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.1.0'
 
