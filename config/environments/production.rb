@@ -86,6 +86,7 @@ Brocks::Application.configure do
     address: "smtp.mandrillapp.com",
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     port: "587" ,
+    domain: "mandrillapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "goninja@gmail.com",
