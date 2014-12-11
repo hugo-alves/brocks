@@ -31,6 +31,8 @@ gem 'newrelic_rpm'
 
 gem 'aws-sdk-core'
 
+gem 'mandrill-api'
+
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.1.0'
 
