@@ -84,6 +84,7 @@ Brocks::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.mandrillapp.com",
+    sender: "goninja@gmail.com"
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     port: "587" ,
     domain: "mandrillapp.com",
