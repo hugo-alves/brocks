@@ -84,14 +84,14 @@ Brocks::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: "smtp.mandrillapp.com",
-    sender: "goninja@gmail.com",
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     port: "587" ,
     domain: "mandrillapp.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "goninja@gmail.com",
-    password: "esCCaA_xlJCqZ1w7nI1w_g"
+    password: "esCCaA_xlJCqZ1w7nI1w_g",
+    from: "goninja@gmail.com"
   }
 
   #amazon sdk com o paperclip
