@@ -27,9 +27,9 @@ gem "paperclip", :git => "http://github.com/thoughtbot/paperclip.git"
 
 gem 'instagram'
 
-gem 'aws-sdk-core'
+gem 'newrelic_rpm'
 
-gem 'rmagick', '2.13.2', :git=>'http://github.com/rmagick/rmagick.git'
+gem 'aws-sdk-core'
 
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.1.0'
