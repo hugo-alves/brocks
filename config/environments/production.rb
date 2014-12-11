@@ -85,8 +85,7 @@ Brocks::Application.configure do
   config.action_mailer.smtp_settings = {
     address: ENV["smtp.mandrillapp.com"],
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
-    port: ENV["587"] #.to_i,
-    #domain: ENV[""],
+    port: ENV["587"].to_i,
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: ENV["goninja@gmail.com"],
