@@ -80,16 +80,16 @@ Brocks::Application.configure do
   
   # Mailer
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => ENV["https://boiling-coast-2335.herokuapp.com/"] }
+  config.action_mailer.default_url_options = { :host => "https://boiling-coast-2335.herokuapp.com/" }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address: ENV["smtp.mandrillapp.com"],
+    address: ENV["SMTP_SERVER"],
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     port: ENV["587"].to_i,
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: ENV["goninja@gmail.com"],
-    password: ENV["esCCaA_xlJCqZ1w7nI1w_g"]
+    user_name: ENV["SMTP_USER"],
+    password: ENV["SMTP_PWD"]
   }
 
   #amazon sdk com o paperclip
