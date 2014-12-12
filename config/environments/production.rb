@@ -80,7 +80,7 @@ Brocks::Application.configure do
   
   # Mailer
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_url_options = { :host => 'https://boiling-coast-2335.herokuapp.com/' }
+  config.action_mailer.default_url_options = { :host => 'https://instaslyce.herokuapp.com/' }
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: ENV["SMTP_SERVER"],
