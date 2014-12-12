@@ -39,13 +39,13 @@ Brocks::Application.configure do
     password: ENV["SMTP_PWD"]
   }
 
-#amazon sdk com o paperclip
+  #amazon sdk com o paperclip
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
       :bucket => ENV['rbrickteste'],
-      :access_key_id => ENV[''],
-      :secret_access_key => ENV['']
+      :access_key_id => ENV['AWS_KEY'],
+      :secret_access_key => ENV['AWS_ACCESS_KEY']
     }
   }
 end
