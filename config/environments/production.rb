@@ -91,7 +91,7 @@ Brocks::Application.configure do
     enable_starttls_auto: true,
     user_name: "goninja@gmail.com",
     password: "esCCaA_xlJCqZ1w7nI1w_g",
-    from: "goninja@gmail.com"
+    from: "hugo@live.com.pt"
   }
 
   #amazon sdk com o paperclip
