@@ -91,7 +91,7 @@ Brocks::Application.configure do
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "goninja@gmail.com",
-    password: "esCCaA_xlJCqZ1w7nI1w_g"
+    password: ""
   }
 
   #amazon sdk com o paperclip
@@ -99,8 +99,8 @@ Brocks::Application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => ENV['rbrickteste'],
-      :access_key_id => ENV['AKIAIC7C3HPGH5CD3GXA'],
-      :secret_access_key => ENV['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']
+      :access_key_id => ENV[''],
+      :secret_access_key => ENV['']
     }
   }
 end
