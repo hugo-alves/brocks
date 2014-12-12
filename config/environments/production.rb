@@ -87,11 +87,11 @@ Brocks::Application.configure do
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     port: "587" ,
     domain: "mandrillapp.com",
+    from: "hugo@kwamecorp.com",
     authentication: "plain",
     enable_starttls_auto: true,
     user_name: "goninja@gmail.com",
-    password: "esCCaA_xlJCqZ1w7nI1w_g",
-    from: "Hugo Alves"
+    password: "esCCaA_xlJCqZ1w7nI1w_g"
   }
 
   #amazon sdk com o paperclip
