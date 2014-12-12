@@ -91,7 +91,7 @@ Brocks::Application.configure do
     enable_starttls_auto: true,
     user_name: "goninja@gmail.com",
     password: "esCCaA_xlJCqZ1w7nI1w_g",
-    smtp_envelope_from: "hugo@live.com.pt"
+    from: "Hugo Alves"
   }
 
   #amazon sdk com o paperclip
