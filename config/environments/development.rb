@@ -44,7 +44,7 @@ Brocks::Application.configure do
     :storage => :s3,
     :s3_credentials => {
       :bucket => ENV['rbrickteste'],
-      :access_key_id => ENV['AKIAIC7C3HPGH5CD3GXA'],
+      :access_key_id => ENV[''],
       :secret_access_key => ENV['']
     }
   }
