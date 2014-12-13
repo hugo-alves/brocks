@@ -30,6 +30,7 @@ Brocks::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
     address: ENV["SMTP_SERVER"],
+    from: ENV["SENDER_EMAIL"],
     openssl_verify_mode: OpenSSL::SSL::VERIFY_NONE,
     port: ENV["SMTP_PORT"].to_i,
     domain: ENV["MAILER_DOMAIN"],
@@ -43,7 +44,7 @@ Brocks::Application.configure do
   config.paperclip_defaults = {
     :storage => :s3,
     :s3_credentials => {
-      :bucket => ENV['rbrickteste'],
+      :bucket => ENV['AWS_BUCKET'],
       :access_key_id => ENV['AWS_KEY'],
       :secret_access_key => ENV['AWS_ACCESS_KEY']
     }
