@@ -36,6 +36,12 @@ gem 'mandrill-api'
 # Bootstrap 3: https://github.com/twbs/bootstrap-sass
 gem 'bootstrap-sass', '3.3.1.0'
 
+#gema que dá uns erros mais uteis
+group :development do
+  gem "better_errors"
+  gem "binding_of_caller"
+end
+
 # Figaro: https://github.com/laserlemon/figaro
 group :development, :test do
   gem 'figaro', '1.0.0'
