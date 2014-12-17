@@ -11,7 +11,10 @@ Brocks::Application.routes.draw do
   post "pins/busca", to: "pins#busca", as: "novo"
   post "pins/index", to: "pins#index", as: "cenas"
   post "pins/perfil", to: "pins#perfil", as: "buscacomquery"
-      
+  get "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkget"    
+  post "pins/fromlink", to: "pins#fromlink", as: "sacaimagemdolinkpost"
+  
+
   devise_for :users
   
   namespace :admin do

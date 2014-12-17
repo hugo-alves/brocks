@@ -14,4 +14,11 @@
 	  <%= text_field_tag(:q) %>
 	  <%= submit_tag("Search") %>
 	<% end %>
+
+	<p>mete aqui o link de uma foto do instagram</p>
+		<%= form_tag({controller: "pins", action: "fromlink", method: "get"}) do %>
+	  <%= label_tag(:q, "Search for:") %>
+	  <%= text_field_tag(:q) %>
+	  <%= submit_tag("Search") %>
+	<% end %>
 </div>

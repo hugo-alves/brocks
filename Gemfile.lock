@@ -118,6 +118,7 @@ GEM
     multi_xml (0.5.5)
     multipart-post (2.0.0)
     newrelic_rpm (3.9.8.273)
+    oembed (0.1.0)
     orm_adapter (0.5.0)
     pg (0.17.1)
     rack (1.5.2)
@@ -200,6 +201,7 @@ DEPENDENCIES
   kaminari (= 0.16.1)
   mandrill-api
   newrelic_rpm
+  oembed
   paperclip!
   pg
   rails (= 4.1.8)
