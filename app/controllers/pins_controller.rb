@@ -15,16 +15,13 @@ class PinsController < ApplicationController
 
 	def fromlink
 		require "net/http"
+
 		#saca so o fim do url da foto que o user colou, para usar no pedido do oembed
 		@short = URI(params[:q]).path.split('/').last
 
 		#junta tudo para ter o url directo da foto com tamanho grande
 		@cone = 'http://instagram.com/p/' + @short + '/media/?size=l'
 
-
-		
-		
-		
 	end
 
 
