@@ -1,20 +1,21 @@
-<div>
+<!-- isto serve para encontrar o user id a partir do username -->
+<!-- <div>
 <p class="h1">busca de fotos do user, tem de usar aindo o userid</p>
 	<%= form_tag({controller: "pins", action: "perfil", method: "post"}) do %>
 	  <%= label_tag(:q, "Search for:") %>
 	  <%= text_field_tag(:q) %>
 	  <%= submit_tag("Search") %>
 	<% end %>
-</div>
-<br> 
-<div>
-<p>busca de fotos do user, tem de usar aindo o userid</p>
+</div> -->
+ 
+<!-- isto serve para mostrar as ultimas 10 fotos do user -->
+<!-- <p>busca de fotos do user, tem de usar aindo o userid</p>
 	<%= form_tag({controller: "pins", action: "index", method: "post"}) do %>
 	  <%= label_tag(:q, "Search for:") %>
 	  <%= text_field_tag(:q) %>
 	  <%= submit_tag("Search") %>
-	<% end %>
-
+	<% end %> -->
+<div>
 	<p>mete aqui o link de uma foto do instagram</p>
 		<%= form_tag({controller: "pins", action: "fromlink", method: "get"}) do %>
 	  <%= label_tag(:q, "Search for:") %>
