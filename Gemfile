@@ -32,6 +32,8 @@ gem 'newrelic_rpm'
 
 gem 'aws-sdk-core'
 
+gem 'cloudinary'
+
 gem 'mandrill-api'
 
 gem 'bootscaf', group: :development
