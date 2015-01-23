@@ -1,6 +1,8 @@
 Brocks::Application.routes.draw do
 
 
+  resources :imagens
+
   resources :products
 
   root "pages#home"    
