@@ -35,6 +35,9 @@ gem 'cloudinary'
 
 gem 'mandrill-api'
 
+gem 'carrierwave'
+
+
 gem 'bootscaf', group: :development
 
 gem 'oembed'

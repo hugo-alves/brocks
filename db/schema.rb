@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141231150619) do
+ActiveRecord::Schema.define(version: 20150129165125) do
 
   create_table "friendly_id_slugs", force: true do |t|
     t.string   "slug",                      null: false
@@ -34,6 +34,23 @@ ActiveRecord::Schema.define(version: 20141231150619) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+    t.string   "image"
+    t.string   "insta"
+  end
+
+  create_table "insta", force: true do |t|
+    t.string   "nome"
+    t.string   "instaimage"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "pins", force: true do |t|
+    t.string   "nome"
+    t.string   "urldoinsta"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "slyce"
   end
 
   create_table "products", force: true do |t|
