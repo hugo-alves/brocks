@@ -25,6 +25,10 @@ class PinsController < ApplicationController
 
     #junta tudo para ter o url directo da foto com tamanho grande
     @cone = 'http://instagram.com/p/' + @short + '/media/?size=l'
+    @image = MiniMagick::Image.open(@cone)
+    @image.crop('320x640+0+0')
+    @image.format "png"
+    @image.write "app/assets/images/output1.png"
 
   end
 

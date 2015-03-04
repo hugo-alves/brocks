@@ -26,40 +26,12 @@ ActiveRecord::Schema.define(version: 20150129165125) do
   add_index "friendly_id_slugs", ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
   add_index "friendly_id_slugs", ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
 
-  create_table "imagens", force: true do |t|
-    t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "image_file_name"
-    t.string   "image_content_type"
-    t.integer  "image_file_size"
-    t.datetime "image_updated_at"
-    t.string   "image"
-    t.string   "insta"
-  end
-
-  create_table "insta", force: true do |t|
-    t.string   "nome"
-    t.string   "instaimage"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "pins", force: true do |t|
     t.string   "nome"
     t.string   "urldoinsta"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "slyce"
-  end
-
-  create_table "products", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "photo_file_name"
-    t.string   "photo_content_type"
-    t.integer  "photo_file_size"
-    t.datetime "photo_updated_at"
   end
 
   create_table "users", force: true do |t|
