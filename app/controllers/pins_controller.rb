@@ -22,14 +22,22 @@ class PinsController < ApplicationController
 
     #saca so o fim do url da foto que o user colou, para usar no pedido do oembed
     @short = URI(params[:q]).path.split('/').last
+    @pissa = URI(params[:p]).path.split('/').last
 
     #junta tudo para ter o url directo da foto com tamanho grande
     @cone = 'http://instagram.com/p/' + @short + '/media/?size=l'
+    @cilindro = 'http://instagram.com/p/' + @pissa + '/media/?size=l'
     for i in 0..9
       @image = MiniMagick::Image.open(@cone)
       @image.crop("64x640+#{i * 64}+0")
-      @image.write "app/assets/images/output" + i.to_s() + ".png"
+      @image.write "app/assets/images/cone" + i.to_s() + ".png"
     end
+    for i in 0..9
+      @image = MiniMagick::Image.open(@cilindro)
+      @image.crop("64x640+#{i * 64}+0")
+      @image.write "app/assets/images/cilindro" + i.to_s() + ".png"
+    end
+
 
   end
 
