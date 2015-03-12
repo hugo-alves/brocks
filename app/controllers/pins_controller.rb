@@ -39,6 +39,17 @@ class PinsController < ApplicationController
     end
 
 
+
+    # CENA PARA JUNTAR DUAS IMAGENS NUMA (NAO ESTA A FUNCIONAR PORQUE PRECISA DE UMA IMAGEM BASE, O MINIMAGICK NAO CRIA IMAGENS)
+    # um = MiniMagick::Image.open(@cone)
+    # dois = MiniMagick::Image.open(@cilindro)
+    # juntas = um.composite(dois) do |c|
+    #   c.compose "Over"
+    #   c.geometry "+640+0"
+    # end
+    # juntas.write "app/assets/images/juntas.png"
+
+
   end
 
   # GET /pins/1
