@@ -19,6 +19,7 @@ class PinsController < ApplicationController
 
   def fromlink
     require "net/http"
+    require 'RMagick'
 
     #saca so o fim do url da foto que o user colou, para usar no pedido do oembed
     @short = URI(params[:q]).path.split('/').last
