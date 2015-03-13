@@ -41,6 +41,7 @@ class PinsController < ApplicationController
 
     image_list = Magick::ImageList.new( "app/assets/images/cone0.png", "app/assets/images/cilindro0.png", "app/assets/images/cone1.png", "app/assets/images/cilindro1.png", "app/assets/images/cone2.png", "app/assets/images/cilindro2.png", "app/assets/images/cone3.png", "app/assets/images/cilindro3.png" )
     image_list.append(false).write("app/assets/images/images.png")
+    Cloudinary::Uploader.upload("app/assets/images/images.png")
 
 
 
