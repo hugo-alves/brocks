@@ -27,16 +27,19 @@ class PinsController < ApplicationController
     #junta tudo para ter o url directo da foto com tamanho grande
     @cone = 'http://instagram.com/p/' + @short + '/media/?size=l'
     @cilindro = 'http://instagram.com/p/' + @pissa + '/media/?size=l'
-    for i in 0..9
+    for i in 0..3
       @image = MiniMagick::Image.open(@cone)
-      @image.crop("64x640+#{i * 64}+0")
+      @image.crop("160x640+#{i * 160}+0")
       @image.write "app/assets/images/cone" + i.to_s() + ".png"
     end
-    for i in 0..9
+    for i in 0..3
       @image = MiniMagick::Image.open(@cilindro)
-      @image.crop("64x640+#{i * 64}+0")
+      @image.crop("160x640+#{i * 160}+0")
       @image.write "app/assets/images/cilindro" + i.to_s() + ".png"
     end
+
+    image_list = Magick::ImageList.new( "app/assets/images/cone0.png", "app/assets/images/cilindro0.png", "app/assets/images/cone1.png", "app/assets/images/cilindro1.png", "app/assets/images/cone2.png", "app/assets/images/cilindro2.png", "app/assets/images/cone3.png", "app/assets/images/cilindro3.png" )
+    image_list.append(false).write("app/assets/images/images.png")
 
 
 

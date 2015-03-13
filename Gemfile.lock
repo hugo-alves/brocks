@@ -1,4 +1,10 @@
 GIT
+  remote: http://github.com/rmagick/rmagick.git
+  revision: 79e1708c7f6792a3a90cb8cb3ffaeb74c58e092e
+  specs:
+    rmagick (2.13.2)
+
+GIT
   remote: http://github.com/thoughtbot/paperclip.git
   revision: 0f7380b3825fdc5ca310ae6bbde7e299a73733cd
   specs:
@@ -141,7 +147,11 @@ GEM
       mini_portile (~> 0.6.0)
     oembed (0.1.0)
     orm_adapter (0.5.0)
+    pdf-core (0.5.1)
     pg (0.17.1)
+    prawn (2.0.0)
+      pdf-core (~> 0.5.0)
+      ttfunk (~> 1.4.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -191,6 +201,7 @@ GEM
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
+    ttfunk (1.4.0)
     turbolinks (2.5.2)
       coffee-rails
     tzinfo (1.2.2)
@@ -233,8 +244,10 @@ DEPENDENCIES
   oembed
   paperclip!
   pg
+  prawn
   rails (= 4.1.8)
   rails_12factor
+  rmagick (= 2.13.2)!
   sass-rails (= 4.0.4)
   sqlite3 (= 1.3.10)
   turbolinks (= 2.5.2)
