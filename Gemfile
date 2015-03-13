@@ -51,7 +51,7 @@ gem "prawn"
 gem 'rmagick', '2.13.2', :git=>'http://github.com/rmagick/rmagick.git'
 
 #gema que dá uns erros mais uteis
-group :development do
+group :development, :production do
   gem "better_errors"
   gem "binding_of_caller"
 end
