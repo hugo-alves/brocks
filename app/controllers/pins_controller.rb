@@ -21,39 +21,28 @@ class PinsController < ApplicationController
     require "net/http"
     require 'RMagick'
 
+
     #saca so o fim do url da foto que o user colou, para usar no pedido do oembed
     @short = URI(params[:q]).path.split('/').last
     @pissa = URI(params[:p]).path.split('/').last
 
     #junta tudo para ter o url directo da foto com tamanho grande
-    @cone = 'http://instagram.com/p/' + @short + '/media/?size=l'
-    @cilindro = 'http://instagram.com/p/' + @pissa + '/media/?size=l'
+    @short = 'http://instagram.com/p/' + @short + '/media/?size=l'
+    @pissa = 'http://instagram.com/p/' + @pissa + '/media/?size=l'
     for i in 0..3
-      @image = MiniMagick::Image.open(@cone)
+      @image = MiniMagick::Image.open(@short)
       @image.crop("160x640+#{i * 160}+0")
       @image.write "app/assets/images/cone" + i.to_s() + ".png"
     end
     for i in 0..3
-      @image = MiniMagick::Image.open(@cilindro)
+      @image = MiniMagick::Image.open(@pissa)
       @image.crop("160x640+#{i * 160}+0")
       @image.write "app/assets/images/cilindro" + i.to_s() + ".png"
     end
 
     image_list = Magick::ImageList.new( "app/assets/images/cone0.png", "app/assets/images/cilindro0.png", "app/assets/images/cone1.png", "app/assets/images/cilindro1.png", "app/assets/images/cone2.png", "app/assets/images/cilindro2.png", "app/assets/images/cone3.png", "app/assets/images/cilindro3.png" )
     image_list.append(false).write("app/assets/images/images.png")
-    Cloudinary::Uploader.upload("app/assets/images/images.png")
-
-
-
-    # CENA PARA JUNTAR DUAS IMAGENS NUMA (NAO ESTA A FUNCIONAR PORQUE PRECISA DE UMA IMAGEM BASE, O MINIMAGICK NAO CRIA IMAGENS)
-    # um = MiniMagick::Image.open(@cone)
-    # dois = MiniMagick::Image.open(@cilindro)
-    # juntas = um.composite(dois) do |c|
-    #   c.compose "Over"
-    #   c.geometry "+640+0"
-    # end
-    # juntas.write "app/assets/images/juntas.png"
-
+    Cloudinary::Uploader.upload("app/assets/images/images.png", :public_id => "images")
 
   end
 
