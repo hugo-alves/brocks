@@ -1,7 +1,7 @@
 Brocks::Application.routes.draw do
 
 
-  root "pages#home"    
+  root "pins#busca"    
   get "home", to: "pages#home", as: "home"
   get "inside", to: "pages#inside", as: "inside"
   get "pins/perfil", to: "pins#perfil", as: "perfil"
@@ -16,7 +16,7 @@ Brocks::Application.routes.draw do
   devise_for :users
   
   namespace :admin do
-    root "base#index"
+    root "pins#busca"
     resources :users
     
   end
