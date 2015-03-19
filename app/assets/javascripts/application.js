@@ -10,10 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require_tree .
 //= require jquery
 //= require jquery_ujs
+//= require oridomi
 //= require turbolinks
 //= require bootstrap 
-//= require analytics
-//= require common
+
 

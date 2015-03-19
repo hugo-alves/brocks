@@ -12,6 +12,8 @@ gem 'bcrypt', '3.1.9'
 gem 'aws-sdk'
 gem "mini_magick"
 
+gem "compass-rails", "~> 1.1.2"
+
 # Necessary for Windows OS (won't install on *nix systems)
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
@@ -37,6 +39,8 @@ gem 'cloudinary'
 gem 'mandrill-api'
 
 gem 'carrierwave'
+
+gem 'oridomi-rails'
 
 
 gem 'bootscaf', group: :development

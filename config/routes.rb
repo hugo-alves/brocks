@@ -6,6 +6,7 @@ Brocks::Application.routes.draw do
   get "inside", to: "pages#inside", as: "inside"
   get "pins/perfil", to: "pins#perfil", as: "perfil"
   get "pins/busca", to: "pins#busca", as: "busca"
+  get "pins/oridomi", to: "pins#oridomi", as: "oridomi"
   post "pins/busca", to: "pins#busca", as: "novo"
   post "pins/index", to: "pins#index", as: "cenas"
   post "pins/perfil", to: "pins#perfil", as: "buscacomquery"
