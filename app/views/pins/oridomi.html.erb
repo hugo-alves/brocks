@@ -1,3 +1,8 @@
+<style >
+  .overlay { 
+  	background: url("<%= cloudinary_url("finais/0.051375788019088486.png", :resource_type => :image) %>");
+  }
+</style>
 
   <div class= "paper"> 
     <div class="overlay">
@@ -5,6 +10,8 @@
     </div>
   </div>
 
+
+<%= cloudinary_url("finais/0.051375788019088486.png", :resource_type => :raw) %>
 
   <script>
 	var folded = new OriDomi('.paper', {

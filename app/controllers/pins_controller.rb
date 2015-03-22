@@ -27,8 +27,8 @@ class PinsController < ApplicationController
     @pissa = URI(params[:p]).path.split('/').last
 
     #junta tudo para ter o url directo da foto com tamanho grande
-    @short = 'http://instagram.com/p/' + @short + '/media/?size=l'
-    @pissa = 'http://instagram.com/p/' + @pissa + '/media/?size=l'
+    @short = 'https://instagram.com/p/' + @short + '/media/?size=l'
+    @pissa = 'https://instagram.com/p/' + @pissa + '/media/?size=l'
     for i in 0..3
       @image = MiniMagick::Image.open(@short)
       @image.crop("160x640+#{i * 160}+0")

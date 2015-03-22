@@ -12,6 +12,9 @@ gem 'bcrypt', '3.1.9'
 gem 'aws-sdk'
 gem "mini_magick"
 
+gem 'jquery-turbolinks'
+
+
 gem "compass-rails", "~> 1.1.2"
 
 # Necessary for Windows OS (won't install on *nix systems)

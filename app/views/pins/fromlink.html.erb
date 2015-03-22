@@ -1,7 +1,37 @@
 <%= cl_image_tag("finais/#{@nomedaimagem}.png", :alt => "imagem") %>
 
-<%= image_tag @short %> <%= image_tag @pissa %>
+<style >
+  .overlay { 
+  	background: url("<%= cloudinary_url("finais/#{@nomedaimagem}.png", :resource_type => :image) %>");
+  }
+</style>
 
+
+  <div class= "paper"> 
+    <div class="overlay">
+    
+    </div>
+  </div>
+
+
+  <script>
+	var folded = new OriDomi('.paper', {
+		speed:           3000,  
+		ripple:          4,     // backwards ripple effect when animating
+		perspective:     3000,   // smaller values exaggerate 3D distortion
+		maxAngle:        180,    //fold range
+		vPanels:         8, 
+		hPanels:         1, 
+		shading:         'soft', 
+		touchEnabled:    true, 
+		touchSensitivity: .10
+	});
+
+//weird effects - comment/uncomment/switch orders/change values for MAXIMUM FUN
+
+	folded.stairs(43, 'left').accordion(45, 'right').stairs(43, 'right')
+
+  </script>
 
 
 
