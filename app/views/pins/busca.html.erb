@@ -15,7 +15,9 @@
 	  <%= text_field_tag(:q) %>
 	  <%= submit_tag("Search") %>
 	<% end %>  -->
-<h1>Abre o instagram e copia o link das duas fotos que escolheste para os campos abaixo</h1>
+
+<h1>Abre o <%= link_to 'instagram', "http://instagram.com", :target => "_blank" %> e copia o link de duas fotos que gostes muito para os campos abaixo</h1>
+
 </br>
 </br>
 </br>
@@ -26,6 +28,6 @@
 	<%= text_field_tag(:q) %>
 	<%= label_tag(:p, "Link da segunda foto:") %>
 	<%= text_field_tag(:p) %>
-	<%= submit_tag("Search") %>
+	<%= submit_tag("Fazer magia") %>
 	<% end %>
 </div>
