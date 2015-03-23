@@ -9,19 +9,23 @@
 </div> -->
  
 <!-- isto serve para mostrar as ultimas 10 fotos do user -->
- <p>busca de fotos do user</p>
+<!--  <p>busca de fotos do user</p>
 	<%= form_tag({controller: "pins", action: "index", method: "post"}) do %>
 	  <%= label_tag(:q, "Search for:") %>
 	  <%= text_field_tag(:q) %>
 	  <%= submit_tag("Search") %>
-	<% end %> 
-<div>
-	<p>mete aqui o link de uma foto do instagram</p>
-		<%= form_tag({controller: "pins", action: "fromlink", method: "get"}) do %>
-		<%= label_tag(:q, "Search for:") %>
-		<%= text_field_tag(:q) %>
-		<%= label_tag(:p, "Search for:") %>
-		<%= text_field_tag(:p) %>
-		<%= submit_tag("Search") %>
+	<% end %>  -->
+<h1>Abre o instagram e copia o link das duas fotos que escolheste para os campos abaixo</h1>
+</br>
+</br>
+</br>
+
+<div>	
+	<%= form_tag({controller: "pins", action: "fromlink", method: "get"}) do %>
+	<%= label_tag(:q, "Link da primeira foto:") %>
+	<%= text_field_tag(:q) %>
+	<%= label_tag(:p, "Link da segunda foto:") %>
+	<%= text_field_tag(:p) %>
+	<%= submit_tag("Search") %>
 	<% end %>
 </div>
