@@ -15,6 +15,8 @@
 //= require jquery.turbolinks
 //= require jquery_ujs
 //= require oridomi
+//= require bootstrap-sprockets
 //= require bootstrap 
 //= require turbolinks
+//= require_tree .
 

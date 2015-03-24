@@ -4,7 +4,7 @@
   }
 </style>
 
-  <div class= "paper"> 
+  <div class= "row-fluid paper"> 
     <div class="overlay">
     
     </div>
@@ -12,23 +12,21 @@
 
 <button id="button" onclick="exemplo.stairs(43, 'left');">vista da esquerda</button>
 
-<button id="button" onclick="exemplo.accordion(-42);">acordeão</button>
+<button id="button" onclick="exemplo.accordion(-48);">vista do centro</button>
 
 <button id="button" onclick="exemplo.stairs(43, 'right')">vista da direita</button>
 
 
 <script>
 	var exemplo = new OriDomi('.paper', {
-		speed:           3000,  
-		ripple:          4,     // backwards ripple effect when animating
+		speed:           2000,  
+		ripple:          3,     // backwards ripple effect when animating
 		perspective:     3000,   // smaller values exaggerate 3D distortion
-		maxAngle:        180,    //fold range
+		maxAngle:        360,    //fold range
 		vPanels:         8, 
 		hPanels:         1, 
 		shading:         'soft', 
 		touchEnabled:    true, 
 		touchSensitivity: .10
 	});
-	
-
 </script>
