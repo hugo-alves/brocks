@@ -10,11 +10,15 @@
     </div>
   </div>
 
+<button id="button" onclick="exemplo.stairs(43, 'left');">vista da esquerda</button>
 
-<%= cloudinary_url("finais/0.051375788019088486.png", :resource_type => :raw) %>
+<button id="button" onclick="exemplo.accordion(-45);">acordeão</button>
 
-  <script>
-	var folded = new OriDomi('.paper', {
+<button id="button" onclick="exemplo.stairs(43, 'right')">vista da direita</button>
+
+
+<script>
+	var exemplo = new OriDomi('.paper', {
 		speed:           3000,  
 		ripple:          4,     // backwards ripple effect when animating
 		perspective:     3000,   // smaller values exaggerate 3D distortion
@@ -25,9 +29,6 @@
 		touchEnabled:    true, 
 		touchSensitivity: .10
 	});
+	
 
-//weird effects - comment/uncomment/switch orders/change values for MAXIMUM FUN
-
-	folded.stairs(43, 'left').accordion(45, 'right').stairs(43, 'right')
-
-  </script>
+</script>
